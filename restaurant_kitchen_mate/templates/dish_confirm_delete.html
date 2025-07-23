@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Delete "{{ dish.name }}"?</h2>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Confirm Delete</button>
+    <a href="{% url 'restaurant:dish-detail' dish.pk %}" class="btn btn-secondary">Cancel</a>
+  </form>
+{% endblock %}
