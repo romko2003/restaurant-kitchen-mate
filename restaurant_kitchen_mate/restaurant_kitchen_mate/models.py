@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+
 class DishType(models.Model):
     name = models.CharField(max_length=255)
 
@@ -26,7 +27,6 @@ class Dish(models.Model):
         return self.name
 
 
-# Optional — додатково: інгредієнти
 class Ingredient(models.Model):
     name = models.CharField(max_length=255)
     dishes = models.ManyToManyField(Dish, related_name="ingredients")
