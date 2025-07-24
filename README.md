@@ -36,24 +36,29 @@ A Django-powered kitchen management system designed for restaurant owners and ki
 git clone https://github.com/romko2003/restaurant-kitchen-mate.git
 cd restaurant-kitchen-mate
 
-### 2. Create a virtual environment
+**### 2. Create a virtual environment**
+
 '''bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-### 3. Install dependencies
+**### 3. Install dependencies**
+
 '''bash
 pip install -r requirements.txt
-### 4. Create .env file and add your secret key
+
+**### 4. Create .env file and add your secret key**
 
 env
 SECRET_KEY=your-secret-key-here
 
-### 5. Apply database migrations
+**### 5. Apply database migrations**
+
 '''bash
 python manage.py migrate
 
-6. Run the development server
+**6. Run the development server**
+
 '''bash
 python manage.py runserver
 🗂 Project Structure
