@@ -1,5 +1,4 @@
 📘 README.md
-markdown
 # 🍴 Restaurant Kitchen Mate
 
 A Django-powered kitchen management system designed for restaurant owners and kitchen staff to collaborate efficiently. Cooks can create dishes and dish types, assign preparation responsibilities, and manage kitchen workflows.
