@@ -28,44 +28,48 @@ A Django-powered kitchen management system designed for restaurant owners and ki
 
 ---
 
-## ⚙️ Setup Instructions
+## 🚀 Setup Instructions
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/romko2003/restaurant-kitchen-mate.git
-   cd restaurant-kitchen-mate
-Create virtual environment:
+### 1. Clone the repository
 
-bash
+```bash
+git clone https://github.com/romko2003/restaurant-kitchen-mate.git
+cd restaurant-kitchen-mate
+
+### 2. Create a virtual environment
+'''bash
 python3 -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate for Windows
-Install dependencies:
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-bash
+### 3. Install dependencies
+'''bash
 pip install -r requirements.txt
-Create .env file and add SECRET_KEY:
+### 4. Create .env file and add your secret key
 
+env
 SECRET_KEY=your-secret-key-here
-Apply migrations:
 
-bash
+### 5. Apply database migrations
+'''bash
 python manage.py migrate
-Run the server:
 
-bash
+6. Run the development server
+'''bash
 python manage.py runserver
 🗂 Project Structure
 restaurant-kitchen-mate/
-├── restaurant/               # Main Django app
-│   ├── models.py             # Dish, Cook, DishType models
-│   ├── views.py              # Class-based views
-│   ├── urls.py               # App URL routes
-│   ├── templates/restaurant/ # HTML templates
-│   └── static/restaurant/    # CSS, JS, images
+├── restaurant/                # Main Django app
+│   ├── models.py              # Dish, Cook, DishType models
+│   ├── views.py               # Class-based views
+│   ├── urls.py                # App URL routes
+│   ├── templates/restaurant/  # HTML templates
+│   └── static/restaurant/     # CSS, JS, images
 ├── manage.py
 ├── requirements.txt
 ├── .env
 ├── .gitignore
 └── README.md
+
+
 📄 License
 This project is open-source and available under the MIT License.
